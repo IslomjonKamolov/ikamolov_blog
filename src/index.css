@@ -260,3 +260,11 @@ li {
   color: white;
   font-family: sans-serif;
 }
+
+footer{
+  position: absolute;
+  bottom: 10px;
+  color: rgba(255, 255, 255, 0.62);
+  font-family: sans-serif;
+  left: 10px;
+}
