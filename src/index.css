@@ -362,7 +362,7 @@ footer {
     left: -100%;
     top: 100px;
     overflow: auto;
-    height: 87vh;
+    height: 100vh;
     box-shadow: -7px -7px 10px 0 inset rgba(255, 255, 255, 0.612);
   }
 
