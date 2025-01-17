@@ -9,6 +9,7 @@ const PostsPage = () => {
   const { id } = useParams(); // URL'dan post id'ni olish
   const [posts, setPosts] = useState([]);
   const [post, setPost] = useState(null);
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
 
   useEffect(() => {
     // Barcha postlarni yaratish va createdAt bo'yicha tartiblashtirish
@@ -48,14 +49,15 @@ const PostsPage = () => {
   }, [id]);
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div className='PostPage__main--container'>
+      <button className='postPage__menuBtn' onClick={() => setIsOpenMenu(!isOpenMenu)}>=</button>
       {/* Left qism: PostList */}
-      <div style={{ width: '30%', padding: '20px' }}>
-        <PostList posts={posts} />
+      <div className='PostList__container' style={{ left: isOpenMenu ? '0px' : '-100%' }}>
+        <PostList posts={posts} setIsOpenMenu={setIsOpenMenu}/>
       </div>
 
       {/* Right qism: PostDetail */}
-      <div style={{ width: '70%', padding: '20px' }}>
+      <div className='PostDetail__container'>
         {post ? (
           <PostDetail post={post} />
         ) : (

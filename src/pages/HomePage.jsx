@@ -16,7 +16,7 @@ export default function HomePage() {
             <div className="homePage__container">
                 <h1 className='main__title'>Sayt haqida</h1>
                 <p className="about__site__text">
-                    Salom! Bu sayt orqali siz shunchaki blog postlarni o'qishingiz mumkin. Hozir siz ko'rib turgan narsalar sayni 1.0 versiyasi bo'lib kelajakda yangilanishi kutilmoqda. Sayt hozirda juda ko'p kamchiliklarga ega lekin bloglarni o'qishingiz uchun barcha narsa yetarli. Agar sizga DARK MODE noqulay bo'lsa yaqin oradagi yangilanish bu noqulaylikni bartaraf etish uchun qilinadi.
+                    Salom! Bu sayt orqali siz shunchaki blog postlarni o'qishingiz mumkin. Hozir siz ko'rib turgan narsalar sayni 1.01 versiyasi bo'lib kelajakda yangilanishi kutilmoqda. Sayt hozirda juda ko'p kamchiliklarga ega lekin bloglarni o'qishingiz uchun barcha narsa yetarli. Agar sizga DARK MODE noqulay bo'lsa yaqin oradagi yangilanish bu noqulaylikni bartaraf etish uchun qilinadi.
                 </p>
                 <h2 className='second__title'>Men haqimda</h2>
                 <p className="about__site__text">
