@@ -48,12 +48,36 @@ const PostsPage = () => {
     }
   }, [id]);
 
+  if (isOpenMenu) {
+    document.body.style.overflow = 'hidden';
+  } else{
+    document.body.style.overflow = 'auto';
+  }
   return (
     <div className='PostPage__main--container'>
-      <button className='postPage__menuBtn' onClick={() => setIsOpenMenu(!isOpenMenu)}>=</button>
+      <button className='postPage__menuBtn' onClick={() => setIsOpenMenu(!isOpenMenu)}>
+        <svg
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+        >
+          <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+          <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+          <g id="SVGRepo_iconCarrier">
+            {" "}
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 8h15M5 16h22M5 24h22M5 11l3-3-3-3"
+            />{" "}
+          </g>
+        </svg>
+      </button>
       {/* Left qism: PostList */}
-      <div className='PostList__container' style={{ left: isOpenMenu ? '0px' : '-100%' }}>
-        <PostList posts={posts} setIsOpenMenu={setIsOpenMenu}/>
+      <div className='PostList__container' style={{ left: isOpenMenu ? '0px' : '-100%', opacity: isOpenMenu ? "1" : "0"}}>
+        <PostList posts={posts} setIsOpenMenu={setIsOpenMenu} />
       </div>
 
       {/* Right qism: PostDetail */}

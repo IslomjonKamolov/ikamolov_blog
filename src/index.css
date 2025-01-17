@@ -8,6 +8,11 @@ body {
   background-color: #262626;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 #root {
   display: flex;
   min-height: 100vh;
@@ -85,10 +90,12 @@ header {
 }
 
 .GoToPosts__link {
-  color: rgb(138, 255, 146);
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: white;
   font-family: sans-serif;
-  letter-spacing: 1px;
-  word-spacing: 5px;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0;
 }
 
 .post__title {
@@ -150,14 +157,20 @@ blockquote {
 
 
 .share__button {
-  display: block;
-  padding: 5px 20px;
+  display: flex;
+  width: 20px;
+  height: 20px;
   border: none;
+  background: transparent;
   color: white;
-  background: rgba(0, 0, 0, 0.571);
-  border-radius: 2px;
-  font-size: 18px;
-  cursor: pointer;
+}
+
+.flex__box--postDetails {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: start;
+  gap: 20px !important;
 }
 
 .post__list {
@@ -298,9 +311,11 @@ footer {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  height: 60vh;
+  opacity: 1 !important;
+  height: 100vh;
   box-shadow: -7px -7px 10px 0 inset rgba(255, 255, 255, 0.612);
   border-radius: 2px 10px 10px 2px;
+  transition: all 0.3s;
 }
 
 .PostList__container::-webkit-scrollbar {
@@ -320,26 +335,69 @@ footer {
 }
 
 .postPage__menuBtn {
-  display: flex;
-  padding: 80px;
+  display: none;
+  width: 30px;
+  height: 30px;
   color: white;
-  background: #000;
+  background: transparent;
+  border: none;
 }
 
-.post__list--closeBtn{
+.post__list--closeBtn {
   background: transparent;
-  width: 20px;
-  height: 20px;
-  display: flex;
+  width: 30px;
+  height: 30px;
+  display: none;
   align-items: center;
   justify-content: center;
-  color: red;
-  border: 1px solid red;
   padding: 2px;
+  cursor: pointer;
+  border: none;
+  color: wheat;
   margin-left: auto;
 }
 
+pre {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 @media (max-width:768px) {
+
+  .main__title,
+  .second__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .about__site__text {
+    font-size: 14px;
+  }
+
+  .postPage__menuBtn,
+  .post__list--closeBtn {
+    display: flex;
+  }
+
+
+  .postbox>div>p>a {
+    color: aqua;
+  }
+
+  .postbox>div>ol>li,
+  .postbox>div>ul>li {
+    font-size: 14px;
+  }
+
+
+  .postbox>div>p {
+    color: rgba(255, 255, 255, 0.798);
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
   .PostPage__main--container {
     display: flex;
     align-items: start;
@@ -351,23 +409,49 @@ footer {
     padding: 0 20px;
   }
 
+  .post__title {
+    font-size: 20px;
+  }
+
   .PostList__container {
     max-width: 100%;
     width: 100%;
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     background: #000000aa;
     backdrop-filter: blur(1px);
     left: -100%;
     top: 100px;
     overflow: auto;
-    height: 100vh;
+    opacity: 0;
+    height: 84vh;
     box-shadow: -7px -7px 10px 0 inset rgba(255, 255, 255, 0.612);
   }
 
   .PostDetail__container {
     max-width: 1000px;
     width: 100%;
+  }
+
+  .header__logo {
+    font-size: 25px;
+  }
+
+  .telegram_icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .create__title {
+    font-size: 22px;
+  }
+
+  .select__post__details {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
