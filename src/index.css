@@ -367,6 +367,7 @@ pre {
 strong,
 h3 {
   color: #ffffffcb;
+  font-family: sans-serif;
 }
 
 @media (max-width:768px) {
