@@ -253,6 +253,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
+  width: 100%;
 }
 
 .ql-toolbar.ql-snow {
@@ -361,6 +362,11 @@ pre {
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+strong,
+h3 {
+  color: #ffffffcb;
 }
 
 @media (max-width:768px) {
