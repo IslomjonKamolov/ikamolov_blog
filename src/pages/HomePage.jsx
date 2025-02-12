@@ -34,7 +34,7 @@ export default function HomePage() {
 
                     Saytimning birinchi versiyasi hali mukammal emas. Kelajakda uni yaxshilashni reja qilganman. Masalan, DARK MODE xususiyati qo‘shilishi kutilmoqda. Lekin hozircha bloglarni o‘qish uchun hamma narsa yetarli. <br /><hr /> <br />
 
-                    Demak, o‘qishga tayyormisiz? 🎯 Pastdagi tugmani bosing va blogga sho‘ng‘ing! 🚀
+                    Demak, o‘qishga tayyormisiz? 🎯 Pastdagi tugmani bosing va blogga sho‘ng‘ing!  🚀
                 </p>
                 <br />
                 <Link to="posts" className="GoToPosts__link">Postlarni ko'rish</Link>
