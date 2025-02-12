@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Input from './input'
+import Input from './Input'
 export default function Header() {
     const [isPassed, setIsPassed] = useState(false)
     return (
