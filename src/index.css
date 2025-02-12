@@ -370,6 +370,67 @@ h3 {
   font-family: sans-serif;
 }
 
+a > strong > em {
+  color: aqua;
+}
+
+.open__postWriteMenu__btn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  justify-content: center;
+  color: white;
+}
+
+.header__menu__box{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+}
+
+.OpenInPhonePasswordWritier{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.637);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.openinphoneform{
+  max-width: 500px;
+  width: 100%;
+}
+
+.openinphoneform > div > button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  background: linear-gradient(to right, red, blue);
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.openinphoneformlabel{
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
 @media (max-width:768px) {
 
   .main__title,

@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/posts/:id" element={<PostsPage />} /> {/* Dynamic post page */}
         <Route path='/create' element={<PostCreatePage />} />
       </Routes>
-      <footer  style={{paddingTop: "20px"}}>Version 1.01 created by Islomjon Kamolov</footer>
+      <footer  style={{paddingTop: "20px"}}>Version 1.02 created by Islomjon Kamolov</footer>
     </Router>
   );
 };
