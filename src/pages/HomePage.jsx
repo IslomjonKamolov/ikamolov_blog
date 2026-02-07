@@ -26,12 +26,6 @@ export default function HomePage() {
 
                     Mening hayotimdagi asosiy tamoyillarimdan biri – ikkiyuzlamachilik va soxtalikni yomon ko‘rish. Shuning uchun blogdagi barcha fikrlar samimiy va real bo‘ladi. Agar biror mavzu haqida yozsam, demak, bu haqda o‘ylaganman, tahlil qilganman va o‘zim uchun xulosa chiqarganman.
 
-                    Biroz shaxsiy ma’lumotlarga ham o‘tsak: <br /><hr /> <br />
-                    🗓 2008-yil 9-avgustda tug‘ilganman. <br /><hr /> <br />
-                    📚 Python va dasturlashga qiziqaman, yangi bilimlarni amaliy yo‘l bilan o‘rganishni yaxshi ko‘raman. <br /><hr /> <br />
-                    🎙 Dublaj qilishni o‘rganmoqchiman, Reaper dasturi bilan shug‘ullanyapman. <br /> <hr /><br />
-                    📵 Telefondan ortiqcha foydalanishni kamaytirishga harakat qilaman, lekin ba’zan vaqtimni yo‘qotib qo‘yaman. <br /> <hr /><br />
-
                     Saytimning birinchi versiyasi hali mukammal emas. Kelajakda uni yaxshilashni reja qilganman. Masalan, DARK MODE xususiyati qo‘shilishi kutilmoqda. Lekin hozircha bloglarni o‘qish uchun hamma narsa yetarli. <br /><hr /> <br />
 
                     Demak, o‘qishga tayyormisiz? 🎯 Pastdagi tugmani bosing va blogga sho‘ng‘ing!  🚀
